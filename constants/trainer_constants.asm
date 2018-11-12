@@ -25,56 +25,228 @@ CHRIS EQU __enum__
 	const PHONECONTACT_BUENA
 
 KRIS EQU __enum__
-	trainerclass FALKNER ; 1
-	const FALKNER1
+	trainerclass YOUNGSTER ; 1
+	const BEN1
+	const CALVIN
+	const JOSH
+	const TIMMY1
+	const JOEY
+	const DAN
+	const CHAD1
+	const BEN2
+	const EDDIE
+	const DAVE
+	const DILLON
+	const YASU1
+	const TYLER
+	const TIMMY2
+	const CHAD2
+	const YASU2
+	const BEN3
+	const TIMMY3
+	const CHAD3
+	const JOHNSON
+	const YASU3
+	const BEN4
+	const TIMMY4
+	const CHAD4
 
-	trainerclass WHITNEY ; 2
-	const WHITNEY1
+	trainerclass BUG_CATCHER ; 2
+	const RICK
+	const DOUG
+	const ANTHONY
+	const CHARLIE
+	const SAMMY
+	const COLTON1
+	const GREG
+	cosnt JAMES
+	const CALE
+	const COLTON2
+	const KEIGO
+	const ELIJAH
+	const BRENT
+	const CONNER
+	const COLTON3
+	const COLTON4
 
-	trainerclass BUGSY ; 3
-	const BUGSY1
+	trainerclass LASS ; 3
+	const CHERRY
+	const JANICE1
+	const SALLY
+	const ROBIN
+	const IRIS
+	const MIRIAM
+	const ALI
+	const RELI1
+	const HALEY
+	const JANICE2
+	const ANN
+	const DAWN
+	const RELI2
+	const JULIA
+	const PAIGE
+	const ANDREA
+	const MEGAN1
+	const KAY
+	const LISA
+	const JANICE3
+	const RELI3
+	const MEGAN2
+	const CRISSY
+	const MEGAN3
 
-	trainerclass MORTY ; 4
-	const MORTY1
+	trainerclass SAILOR ; 4
+	const TREVOR
+	const EDMOND
+	const PHILLIP
+	const HUEY
+	const DYLAN
+	const DUNCAN
+	const LEONARD
+	const DWAYNE
 
-	trainerclass PRYCE ; 5
-	const PRYCE1
+	trainerclass CAMPER ; 5
+	const LIAM
+	const ETHAN
+	const SHANE
+	const FLINT
+	const RICKY1
+	const JEFF1
+	const RICKY2
+	const JEFF2
+	const CHRIS1
+	const DREW
+	const CHRIS2
+	const RICKY3
+	const JEFF3
+	const CHRIS3
+	const JUSTIN
+	const CHRIS4
 
-	trainerclass JASMINE ; 6
-	const JASMINE1
+	trainerclass PICNICKER ; 6
+	const DIANA
+	const KELSEY1
+	const NANCY
+	const ISABELLE1
+	const ELECTRA
+	const KELSEY2
+	const ISABELLE2
+	const ALICIA1
+	const CAITLIN
+	const HEIDI
+	const MARTHA
+	const SOFIA
+	const LEAH
+	const ARIANA
+	const DANA
+	const CAROL
+	const TINA
+	const ALICIA2
+	const BECKY1
+	const CELIA
+	const KINDRA
+	const YAZMIN
+	const ALMA
+	const SUSIE1
+	const VALERIE
+	const GWEN
+	const KELSEY3
+	const ISABELLE3
+	const ALICIA3
+	const BECKY2
+	const SUSIE2
+	const IRENE
+	const MISSY1
+	const BECKY3
+	const SUSIE3
+	const MISSY2
+	const KELSEY4
+	const ISABELLE4
+	const ALICIA4
+	const BECKY4
+	const SUSIE4
+	const MISSY3
 
-	trainerclass CHUCK ; 7
-	const CHUCK1
+	trainerclass POKEMANIAC ; 7
+	const ASHTON
+	const WINSTON
+	const STEVE
+	const COOPER
+	const HERMAN1
+	const MARK1
+	const HERMAN2
+	const MARK2
+	const DAWSON
+	const HERMAN3
+	const MARK3
 
-	trainerclass CLAIR ; 8
-	const CLAIR1
+	trainerclass SUPER_NERD ; 8
+	const JOVAN
+	const MIGUEL
+	const GLENN1
+	const LESLIE
+	const AIDAN
+	const GLENN2
+	const ERIK
+	const AVERY
+	const DEREK
+	const ZAC
 
-	trainerclass RIVAL1 ; 9
-	const RIVAL1_1_CHIKORITA
-	const RIVAL1_1_CYNDAQUIL
-	const RIVAL1_1_TOTODILE
-	const RIVAL1_2_CHIKORITA
-	const RIVAL1_2_CYNDAQUIL
-	const RIVAL1_2_TOTODILE
-	const RIVAL1_3_CHIKORITA
-	const RIVAL1_3_CYNDAQUIL
-	const RIVAL1_3_TOTODILE
-	const RIVAL1_4_CHIKORITA
-	const RIVAL1_4_CYNDAQUIL
-	const RIVAL1_4_TOTODILE
-	const RIVAL1_5_CHIKORITA
-	const RIVAL1_5_CYNDAQUIL
-	const RIVAL1_5_TOTODILE
+	trainerclass HIKER ; 9
+	const MARCOS
+	const FRANKLIN1
+	const WAYNE
+	const NOB
+	const JEREMY1
+	const ALAN
+	const BRICE
+	const ALLEN
+	const ERIC
+	const LENNY
+	const OLIVER
+	const LUCAS
+	const DUDLEY
+	const CLARK
+	const TRENT1
+	const FRANKLIN2
+	const JEREMY2
+	const TRENT2
 
-	trainerclass POKEMON_PROF ; a
+	trainerclass BIKER ; a
+	const JAREN1
+	const RICARDO
+	const JAREN2
+	const LAO
+	const HIDEO
+	const RUBEN1
+	const VIRGIL
+	const BILLY
+	const NIKOLAS
+	const JAXON1
+	const WILLIAM
+	const ERNEST
+	const ALEX
+	const GERALD
+	const MALIK
+	const ISAAC
+	const LUKAS1
+	const JARED
+	const RUBEN2
+	const JAXON2
+	const LUKAS2
 
-	trainerclass WILL ; b
-	const WILL1
+	trainerclass BURGLAR ; b
+	const ARNIE
+	const SIMON
+	const LEWIS
+	const QUINN
+	const RAMON
+	const DUSTY
 
-	trainerclass CAL ; c
-	const CAL1
-	const CAL2
-	const CAL3
+	trainerclass ENGINEER ; c
+	const BERNIE1
+	const BRAXTON
+	const BERNIE2
 
 	trainerclass BRUNO ; d
 	const BRUNO1

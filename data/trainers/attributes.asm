@@ -1,52 +1,76 @@
 TrainerClassAttributes:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 
-; Falkner
+; Youngster
 	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	db 4 ; base reward
+	dw AI_BASIC | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Whitney
+; Bug Catcher
 	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	db 3 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Bugsy
+; Lass
 	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
+	db 4 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
 
-; Morty
+; Sailor
 	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	db 10 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Pryce
-	db HYPER_POTION, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+; Camper
+	db NO_ITEM, NO_ITEM ; items
+	db 5 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Jasmine
-	db HYPER_POTION, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+; Picnicker
+	db NO_ITEM, NO_ITEM ; items
+	db 5 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Chuck
-	db FULL_HEAL, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+; Pokemaniac
+	db NO_ITEM, NO_ITEM ; items
+	db 12 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Clair
-	db FULL_HEAL, HYPER_POTION ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+; Super Nerd
+	db NO_ITEM, NO_ITEM ; items
+	db 6 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Hiker
+	db NO_ITEM, NO_ITEM ; items
+	db 9 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Biker
+	db NO_ITEM, NO_ITEM ; items
+	db 5 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Burglar
+	db NO_ITEM, NO_ITEM ; items
+	db 22 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Engineer
+	db NO_ITEM, NO_ITEM ; items
+	db 12 ; base reward
+	dw AI_BASIC | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Rival1
@@ -61,37 +85,13 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Will
-	db MAX_POTION, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Cal
-	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Bruno
 	db MAX_POTION, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Karen
-	db FULL_HEAL, MAX_POTION ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Koga
-	db FULL_HEAL, FULL_RESTORE ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Champion
 	db FULL_HEAL, FULL_RESTORE ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
@@ -127,12 +127,6 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Youngster
-	db NO_ITEM, NO_ITEM ; items
-	db 4 ; base reward
-	dw AI_BASIC | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Schoolboy
 	db NO_ITEM, NO_ITEM ; items
 	db 8 ; base reward
@@ -144,12 +138,6 @@ TrainerClassAttributes:
 	db 6 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Lass
-	db NO_ITEM, NO_ITEM ; items
-	db 6 ; base reward
-	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_OFTEN
 
 ; Janine
 	db DIRE_HIT, NO_ITEM ; items
@@ -173,12 +161,6 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 22 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Pokemaniac
-	db NO_ITEM, NO_ITEM ; items
-	db 15 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Gruntm
@@ -211,12 +193,6 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Bug Catcher
-	db NO_ITEM, NO_ITEM ; items
-	db 4 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Fisher
 	db NO_ITEM, NO_ITEM ; items
 	db 10 ; base reward
@@ -235,18 +211,6 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Sailor
-	db NO_ITEM, NO_ITEM ; items
-	db 10 ; base reward
-	dw AI_BASIC | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Super Nerd
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Rival2
 	db NO_ITEM, NO_ITEM ; items
 	db 25 ; base reward
@@ -259,28 +223,10 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Hiker
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Biker
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Blaine
 	db MAX_POTION, FULL_HEAL ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Burglar
-	db NO_ITEM, NO_ITEM ; items
-	db 22 ; base reward
-	dw AI_BASIC | AI_OFFENSIVE | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Firebreather
@@ -311,18 +257,6 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 8 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Picnicker
-	db NO_ITEM, NO_ITEM ; items
-	db 5 ; base reward
-	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Camper
-	db NO_ITEM, NO_ITEM ; items
-	db 5 ; base reward
-	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Executivef
