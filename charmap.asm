@@ -165,6 +165,7 @@
 	charmap "ä",         $c3
 	charmap "ö",         $c4
 	charmap "ü",         $c5
+	charmap "ç",         $c6
 
 	charmap "'d",        $d0
 	charmap "'l",        $d1

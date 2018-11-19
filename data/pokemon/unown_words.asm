@@ -36,8 +36,10 @@ UnownWords:
 	dw UnownWordX
 	dw UnownWordY
 	dw UnownWordZ
+	dw UnownWordEP
+	dw UnownWordQM
 
-UnownWordA: unownword "ANGRY"
+UnownWordA: unownword "ANGER"
 UnownWordB: unownword "BEAR"
 UnownWordC: unownword "CHASE"
 UnownWordD: unownword "DIRECT"
@@ -63,3 +65,5 @@ UnownWordW: unownword "WANT"
 UnownWordX: unownword "XXXXX"
 UnownWordY: unownword "YIELD"
 UnownWordZ: unownword "ZOOM"
+UnownWordEP: unownword "((((("
+UnownWordQM: unownword ")))))"

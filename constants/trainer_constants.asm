@@ -60,6 +60,8 @@ KRIS EQU __enum__
 	const COLTON1
 	const GREG
 	cosnt JAMES
+	const KENT
+	const ROBBY
 	const CALE
 	const COLTON2
 	const KEIGO

@@ -25,3 +25,5 @@ UnownBitmasksPointers:
 	dw UnownXBitmasks
 	dw UnownYBitmasks
 	dw UnownZBitmasks
+	dw UnownEPBitmasks
+	dw UnownQMBitmasks
